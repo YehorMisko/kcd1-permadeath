@@ -1,0 +1,21 @@
+  <!-- PERMADEATH MOD BEGIN -->
+  <superaction name="permadeath_toggle" ui_group="permadeath" ui_name="@ui_text_permadeath_toggle" ui_tooltip="@ui_tooltip_permadeath_toggle" keyboard="writeable">
+    <action consoleCMD="1" name="permadeath_on" map="default" />
+    <control input="np_period" controller="keyboard" />
+  </superaction>
+
+  <superaction name="permadeath_status" ui_group="permadeath" ui_name="@ui_text_permadeath_status" ui_tooltip="@ui_tooltip_permadeath_status" keyboard="writeable">
+    <action consoleCMD="1" name="permadeath_status" map="default" />
+    <control input="f9" controller="keyboard" />
+  </superaction>
+
+  <superaction name="permadeath_lives_inc" ui_group="permadeath" ui_name="@ui_text_permadeath_lives_inc" ui_tooltip="@ui_tooltip_permadeath_lives_inc" keyboard="writeable">
+    <action consoleCMD="1" name="permadeath_lives_inc" map="default" />
+    <control input="np_add" controller="keyboard" />
+  </superaction>
+
+  <superaction name="permadeath_lives_dec" ui_group="permadeath" ui_name="@ui_text_permadeath_lives_dec" ui_tooltip="@ui_tooltip_permadeath_lives_dec" keyboard="writeable">
+    <action consoleCMD="1" name="permadeath_lives_dec" map="default" />
+    <control input="np_subtract" controller="keyboard" />
+  </superaction>
+  <!-- PERMADEATH MOD END -->

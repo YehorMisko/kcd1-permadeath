@@ -1,0 +1,11 @@
+<Table>
+<Row><Cell>ui_keybinds_group_permadeath</Cell><Cell>Permadeath</Cell><Cell>Permadeath</Cell></Row>
+<Row><Cell>ui_text_permadeath_toggle</Cell><Cell>Make this run permadeath</Cell><Cell>Make this run permadeath</Cell></Row>
+<Row><Cell>ui_tooltip_permadeath_toggle</Cell><Cell>Flags the run you are playing as permadeath, and locks in its number of lives. Only needs pressing once - the setting is remembered for that run. To turn it back off, press twice.</Cell><Cell>Flags the run you are playing as permadeath, and locks in its number of lives. Only needs pressing once - the setting is remembered for that run. To turn it back off, press twice.</Cell></Row>
+<Row><Cell>ui_text_permadeath_status</Cell><Cell>Show lives remaining</Cell><Cell>Show lives remaining</Cell></Row>
+<Row><Cell>ui_tooltip_permadeath_status</Cell><Cell>Shows whether this run is permadeath and how many lives are left.</Cell><Cell>Shows whether this run is permadeath and how many lives are left.</Cell></Row>
+<Row><Cell>ui_text_permadeath_lives_inc</Cell><Cell>Add a life</Cell><Cell>Add a life</Cell></Row>
+<Row><Cell>ui_tooltip_permadeath_lives_inc</Cell><Cell>Adds one life, up to 99. Set the count BEFORE you flag the run as permadeath - once flagged, the number of lives is locked in.</Cell><Cell>Adds one life, up to 99. Set the count BEFORE you flag the run as permadeath - once flagged, the number of lives is locked in.</Cell></Row>
+<Row><Cell>ui_text_permadeath_lives_dec</Cell><Cell>Remove a life</Cell><Cell>Remove a life</Cell></Row>
+<Row><Cell>ui_tooltip_permadeath_lives_dec</Cell><Cell>Removes one life. Will not go below 1 - only dying can end a run. Locked in once the run is flagged as permadeath.</Cell><Cell>Removes one life. Will not go below 1 - only dying can end a run. Locked in once the run is flagged as permadeath.</Cell></Row>
+</Table>

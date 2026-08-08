@@ -1,0 +1,21 @@
+# build output
+*.dll
+*.obj
+*.exp
+*.lib
+*.pdb
+*.ilk
+dist/
+release/
+
+# workspace bits that must never be published
+extracted_lua/
+build_mod/
+permadeath_source_code/
+*.pak
+*.whs
+*.bin
+*.log
+
+__pycache__/
+*.pyc

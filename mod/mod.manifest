@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kcd_mod>
+  <info>
+    <name>PermadeathTest</name>
+    <description>Diagnostic hook to find which death paths go through SinglePlayer:ProcessActorDamage</description>
+    <author>local</author>
+    <version>1.0</version>
+    <created_on>Tue Aug 04 2026</created_on>
+  </info>
+</kcd_mod>
