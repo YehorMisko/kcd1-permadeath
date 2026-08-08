@@ -1,9 +1,11 @@
 <Table>
 <Row><Cell>ui_keybinds_group_permadeath</Cell><Cell>Permadeath</Cell><Cell>Trvalá smrt</Cell></Row>
 <Row><Cell>ui_text_permadeath_toggle</Cell><Cell>Make this run permadeath</Cell><Cell>Zapnout trvalou smrt</Cell></Row>
-<Row><Cell>ui_tooltip_permadeath_toggle</Cell><Cell>Flags the run you are playing as permadeath. Only needs pressing once - the setting is remembered for that run.</Cell><Cell>Označí rozehranou hru jako hru s trvalou smrtí. Stačí stisknout jednou - nastavení zůstane pro tuto hru zapamatováno.</Cell></Row>
+<Row><Cell>ui_tooltip_permadeath_toggle</Cell><Cell>Flags the run you are playing as permadeath, and locks in its number of lives. Only needs pressing once - the setting is remembered for that run. To turn it back off, press twice.</Cell><Cell>Označí rozehranou hru jako hru s trvalou smrtí a uzamkne počet životů. Stačí stisknout jednou - nastavení zůstane pro tuto hru zapamatováno. Vypnete jej dvojím stisknutím.</Cell></Row>
 <Row><Cell>ui_text_permadeath_status</Cell><Cell>Show lives remaining</Cell><Cell>Zobrazit zbývající životy</Cell></Row>
 <Row><Cell>ui_tooltip_permadeath_status</Cell><Cell>Shows whether this run is permadeath and how many lives are left.</Cell><Cell>Ukáže, zda je tato hra s trvalou smrtí a kolik zbývá životů.</Cell></Row>
-<Row><Cell>ui_text_permadeath_lives</Cell><Cell>Change number of lives</Cell><Cell>Změnit počet životů</Cell></Row>
-<Row><Cell>ui_tooltip_permadeath_lives</Cell><Cell>Cycles how many lives this run gets: 1, 2, 3, 5, then back to 1. Set it before you start dying.</Cell><Cell>Přepíná počet životů pro tuto hru: 1, 2, 3, 5 a zpět na 1. Nastavte je dříve, než začnete umírat.</Cell></Row>
+<Row><Cell>ui_text_permadeath_lives_inc</Cell><Cell>Add a life</Cell><Cell>Přidat život</Cell></Row>
+<Row><Cell>ui_tooltip_permadeath_lives_inc</Cell><Cell>Adds one life, up to 99. Set the count BEFORE you flag the run as permadeath - once flagged, the number of lives is locked in.</Cell><Cell>Přidá jeden život, až do 99. Počet nastavte DŘÍVE, než hru označíte jako hru s trvalou smrtí - po označení je počet životů uzamčen.</Cell></Row>
+<Row><Cell>ui_text_permadeath_lives_dec</Cell><Cell>Remove a life</Cell><Cell>Odebrat život</Cell></Row>
+<Row><Cell>ui_tooltip_permadeath_lives_dec</Cell><Cell>Removes one life. Will not go below 1 - only dying can end a run. Locked in once the run is flagged as permadeath.</Cell><Cell>Odebere jeden život. Nelze jít pod 1 - hru může ukončit jedině smrt. Po označení hry jako hry s trvalou smrtí je počet uzamčen.</Cell></Row>
 </Table>

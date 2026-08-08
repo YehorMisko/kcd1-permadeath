@@ -71,7 +71,7 @@ VARIANTS = {
 
 # Deliberately below 1.0: it works, but it has not been through many hands yet
 # and it moves save folders around. Bump to 1.0 once real users have run it.
-VERSION = '0.9'
+VERSION = '0.9.1'
 
 MANIFEST = """<?xml version="1.0" encoding="utf-8"?>
 <kcd_mod>
@@ -523,6 +523,40 @@ def build_variant(name, cfg):
     print('built %s (%d files in data.pak)' % (root_dir, len(entries)))
 
 
+def check_localizations():
+    """Every language table must define the same keys, and the keybind fragment
+    must not reference a key no table defines.
+
+    A missing row is silent: the Controls menu just shows the raw @ui_ key. The
+    Czech table was first written against a stale copy of the English one and
+    shipped without the lives_inc/lives_dec rows, which is what this catches.
+    """
+    keys = {}
+    for lang, src in LOCALIZATIONS.items():
+        rows = re.findall(r'<Row><Cell>([^<]+)</Cell>',
+                          read(os.path.join(ROOT, 'build_loc', src)))
+        dupes = sorted({k for k in rows if rows.count(k) > 1})
+        if dupes:
+            sys.exit('%s (%s): duplicate keys %s' % (lang, src, dupes))
+        keys[lang] = set(rows)
+
+    base = keys['English']
+    for lang, ks in keys.items():
+        if ks != base:
+            sys.exit('%s (%s): missing %s, unexpected %s'
+                     % (lang, LOCALIZATIONS[lang],
+                        sorted(base - ks), sorted(ks - base)))
+
+    referenced = set(re.findall(r'"@(ui_[a-z_]+)"', read(SUPERACTIONS_FRAG)))
+    referenced.add(UI_GROUP.split('"')[3].lstrip('@'))
+    unresolved = sorted(referenced - base)
+    if unresolved:
+        sys.exit('keybind fragment references keys no table defines: %s' % unresolved)
+
+    print('localization: %d keys x %d languages, all agree'
+          % (len(base), len(keys)))
+
+
 def refresh_dev():
     """Keep the dev tree's config XMLs generated from the same fragments."""
     cfg = VARIANTS['PermadeathCheatCompat']
@@ -534,6 +568,7 @@ def refresh_dev():
 
 
 if __name__ == '__main__':
+    check_localizations()
     for name, cfg in VARIANTS.items():
         build_variant(name, cfg)
     refresh_dev()
