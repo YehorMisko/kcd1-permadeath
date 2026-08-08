@@ -2,9 +2,7 @@
 
 Source for a permadeath / adjustable-lives mod for Kingdom Come: Deliverance 1.
 
-Pick how many lives a playthrough gets. Spend them all and that run is over — you get
-the game's ending, and the run's saves are moved out of the way so it cannot be
-continued.
+Pick how many lives a playthrough gets. Spend them all - and that run is over.
 
 Download: https://www.nexusmods.com/kingdomcomedeliverance/mods/2326
 
