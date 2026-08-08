@@ -4,7 +4,11 @@ Source for a permadeath / adjustable-lives mod for Kingdom Come: Deliverance 1.
 
 Pick how many lives a playthrough gets. Spend them all - and that run is over.
 
-Download: https://www.nexusmods.com/kingdomcomedeliverance/mods/2326
+**Download:** [Releases](https://github.com/YehorMisko/kcd1-permadeath/releases/latest) ·
+[Nexus Mods](https://www.nexusmods.com/kingdomcomedeliverance/mods/2326)
+
+Both carry the same files. Nexus has the comments and the bug tracker; Releases here is the
+mirror, and tends to be updated first.
 
 ---
 
